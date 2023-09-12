@@ -74,4 +74,18 @@ function validateForm() {
     return true;
 }
 
+window.addEventListener('scroll', function() {
+    // Récupérez la position actuelle de défilement
+    const scrollY = window.scrollY;
+
+    // Vérifiez la position actuelle de défilement et effectuez une action en fonction
+    if (scrollY > 3000) { // Exemple : Changez la couleur d'arrière-plan à partir de 200 pixels de défilement
+        document.body.style.backgroundColor = 'green'; // Changez la couleur d'arrière-plan
+    }else if (scrollY > 1200) { // Exemple : Changez la couleur d'arrière-plan à partir de 200 pixels de défilement
+        document.body.style.backgroundColor = 'blue'; // Changez la couleur d'arrière-plan
+    }else{
+        document.body.style.backgroundColor = 'white';
+    }
+});
+
 

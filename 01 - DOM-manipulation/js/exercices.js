@@ -9,7 +9,7 @@ let paragraph = document.querySelector("#paragraph");
 function addTextInside(cible, contenu) {
   cible.innerText = contenu;
 }
-
+/* injection dans le dom via une fonction plus large spectre*/
 addTextInside(paragraph, "bonjour DOM");
 
 function modifyHtml(type, target, content) {
