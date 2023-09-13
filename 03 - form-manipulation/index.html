@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Form Manipulation</title>
 </head>
+
 <body>
+
+    <form method="" id="exo3form" class="container" onsubmit="return validateForm()" action="#">
+
+        <label for="name">Name</label>
+        <input id="name" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+
+        <label for="checkbox">Veuillez cocher svp</label>
+        <input id="checkbox" type="checkbox">
+
+        <button id="submit" type="submit" value="submit">Submit</button>
+    </form>
+
     <!-- Your code goes here -->
     <script src="js/exercices.js"></script>
 </body>
+
 </html>

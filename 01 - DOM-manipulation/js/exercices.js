@@ -26,6 +26,7 @@ modifyHtml("text", paragraph, "Bonjour");
 /* Changer image via .src */
 document.getElementById("image").src = "/images/test2.png";
 
+/* ////////////////////////////////////////////////////////////////////////// */
 /* Creation du bouton */
 let newButton = document.createElement("button");
 
@@ -40,10 +41,14 @@ let newButtonText = document.createTextNode("Cliquez ici!");
 /* injection du text dans le bouton */
 newButton.appendChild(newButtonText);
 
+/* ////////////////////////////////////////////////////////////////////////// */
+
 /* Selecting the class, adding new class name and remove class name */
 const para = document.querySelector(".para");
 para.classList.add("newPara");
 para.classList.remove("para");
+
+/* ////////////////////////////////////////////////////////////////////////// */
 
 /* Creation du liste des noms */
 let list = ["alice", "bob", "charlie"];
@@ -58,6 +63,8 @@ for (i = 0; i < list.length; i++) {
 /* Remove an element via ID */
 const liToRemove = document.getElementById("3");
 liToRemove.remove();
+
+/* ////////////////////////////////////////////////////////////////////////// */
 
 /* Hide an element with Display: none */
 document.getElementById("2").style.display = "none";
