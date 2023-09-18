@@ -28,6 +28,8 @@ function logKey(e) {
   console.log(e.code);
 }
 
+/* ## Exercice 4 : Cliquer en Dehors d'un Élément */
+
 /* Get the button and the dialog via ID */
 const buttonShow = document.getElementById("my-button");
 const dialog = document.getElementById("my-dialog");
@@ -43,6 +45,8 @@ dialog.addEventListener("click", (event) => {
     dialog.close();
   }
 });
+
+/* ## Exercice 5 : Validation de Formulaire */
 
 /* Validating the input of the form, to see if the form is empty or not */
 function validateForm() {
@@ -83,6 +87,7 @@ function validateForm() {
 
   return true;
 }
+/* Exercice 6 : Défilement de la Page */
 
 window.addEventListener("scroll", function () {
   // Récupérez la position actuelle de défilement

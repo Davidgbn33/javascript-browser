@@ -27,4 +27,27 @@ function validateForm() {
     console.log(valEmail);
   }
 }
-/*  exo 2 */
+
+/* exo n°3 */
+
+function textChangeSelect() {
+  let choice = document.querySelector("#choice");
+  let textP = document.querySelector(".textToReplace");
+  let selectedValue = choice.value;
+
+  choice.addEventListener("change", () => {
+    selectedValue = choice.value;
+    updateText(textP, selectedValue);
+  });
+
+  updateText(textP, selectedValue);
+}
+
+function updateText(element, choice) {
+  if (choice == "option2") {
+    element.innerHTML = "essai2";
+  } else {
+    element.innerHTML =
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minima?";
+  }
+}
