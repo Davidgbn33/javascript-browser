@@ -1,0 +1,118 @@
+.para {
+  height: 300px;
+  width: 300px;
+  background-color: blueviolet;
+  display: none;
+}
+.para2 {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Appliquez l'animation à l'élément */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+  display: block;
+  position: relative;
+}
+
+@keyframes moveOn {
+  0% {
+    left: 10px;
+    top: 10px;
+  }
+  100% {
+    left: 400px;
+    top: 200px;
+  }
+}
+
+.move {
+  animation: moveOn 4s ease-in;
+}
+
+@keyframes rotateOn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotateOn 5s ease;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: brown;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.colorChange {
+  animation: changeColor 4s ease;
+}
+
+.para3 {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+
+@keyframes growChange {
+  0% {
+    height: 300px;
+    width: 300px;
+  }
+  50% {
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.growChange {
+  animation: growChange 4s ease-in;
+}
+
+.box6 {
+  transition: 5s;
+  margin-bottom: 20px;
+}
+
+.appear-row {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
