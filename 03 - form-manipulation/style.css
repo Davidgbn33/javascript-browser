@@ -6,3 +6,11 @@
 .mb-2 {
   margin-bottom: 2rem;
 }
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
