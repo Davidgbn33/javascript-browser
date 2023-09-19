@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DOM - Navigation</title>
 </head>
+
 <body>
 
     <h1>Exercices de Traversée du DOM</h1>
@@ -23,8 +26,8 @@
 
     <!-- Exercice 3: Parcourir des Éléments Frères -->
     <h2>Exercice 3: Parcourir des Éléments Frères</h2>
-    <div>
-        <p>Élément 1</p>
+    <div id="exo3elem">
+        <p class="current">Élément 1</p>
         <p>Élément 2</p>
         <p>Élément 3</p>
     </div>
@@ -33,7 +36,7 @@
     <h2>Exercice 4: Trouver des Éléments Parents</h2>
     <div>
         <div>
-            <p>Élément Enfant</p>
+            <p id="exo4Elem">Élément Enfant</p>
         </div>
     </div>
 
@@ -42,7 +45,7 @@
     <ul id="liste2">
         <li>Niveau 1 - Élément 1
             <ul>
-                <li>Niveau 2 - Élément 1.1</li>
+                <li id="sousListe">Niveau 2 - Élément 1.1</li>
                 <li>Niveau 2 - Élément 1.2</li>
             </ul>
         </li>
@@ -51,9 +54,11 @@
 
     <!-- Exercice 6: Utiliser les Sélecteurs CSS -->
     <h2>Exercice 6: Utiliser les Sélecteurs CSS</h2>
-    <div class="element-classe" data-attribut="valeur">Cet élément a une classe et un attribut.</div>
+    <div class="element-classe" data-attribut="valeur">
+        Cet élément a une classe et un attribut.</div>
 
 
     <script src="js/exercices.js"></script>
 </body>
+
 </html>

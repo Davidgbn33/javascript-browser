@@ -8,7 +8,7 @@ Ce projet propose six exercices pour vous aider à maîtriser la traversée du D
 
 1. Créez une liste (<ul>) dans votre document HTML avec plusieurs éléments de liste (<li>).
 2. Utilisez JavaScript pour sélectionner la liste (<ul>).
-3. À l'aide de la traversée du DOM, sélectionnez et modifiez un ou plusieurs éléments enfants de la liste.
+3. À l'aide de la (chemin d'accés au point donnée) traversée du DOM, sélectionnez et modifiez un ou plusieurs éléments enfants de la liste.
 
 ## Exercice 2 : Rechercher un Élément par ID
 
